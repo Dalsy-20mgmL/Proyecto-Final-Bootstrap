@@ -1,0 +1,33 @@
+body {
+    background-color: khaki;
+}
+
+form {
+    background-color: khaki !important;
+    border: 3px solid deeppink;
+}
+
+label,
+h1,
+p,
+option {
+    color: deeppink !important;
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid deeppink;
+}
+
+.btn-deeppink {
+    background-color: deeppink;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-deeppink:hover {
+    background-color: white;
+    color: deeppink;
+    border: 2px solid deeppink;
+}

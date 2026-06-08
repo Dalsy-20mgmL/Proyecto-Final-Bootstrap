@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: khaki;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+main {
+  background-color: khaki;
+}
+
+header aside img {
+  width: 50px;
+}
+
+header div img {
+  width: 100px;
+}
+
+header div img:last-of-type {
+  width: 40%;
+}
+
+nav {
+  background: deeppink;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li:hover {
+  background: khaki;
+  color: deeppink;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 2em;
+}
+
+nav li {
+  color: white;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner img {
+  height: 10%;
+}
+
+.cajas {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.cajas div {
+  width: 25%;
+  padding: 2%;
+  border: 5px solid deeppink;
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 8px 20px grey;
+  transition: box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(80px);
+  animation: subir 0.8s ease-out forwards; 
+}
+
+@keyframes subir {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main div div:nth-child(1) { animation-delay: 0.2s; }
+main div div:nth-child(2) { animation-delay: 0.4s; }
+main div div:nth-child(3) { animation-delay: 0.6s; }
+
+.cajas div:hover {
+  box-shadow: 0 12px 30px black;
+}
+
+.cajas img {
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.precio {
+  color: darkgreen;
+  font-size: 0.8em;
+  padding: 0.2em;
+}
+
+.noStock {
+  color: red;
+  font-size: 0.8em;
+  padding: 0.2em;
+}
+
+.cajas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrito {
+  border: solid deeppink;
+  background-color: khaki;
+  color: deeppink;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.carrito:hover {
+  border: solid deeppink;
+  background-color: deeppink;
+  color: khaki;
+}
+
+.cajas div button img {
+  width: 30%;
+}
+
+footer {
+  background: deeppink;
+  color: white;
+  text-align: center;
+  padding: 0.1em;
+}
+
+
+.caja {
+  padding: 2%;
+  border: 5px solid deeppink;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px grey;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(80px);
+  animation: subir 0.8s ease-out forwards;
+}
+
+.caja:hover {
+  box-shadow: 0 12px 30px black;
+}
+
+.caja img {
+  width: 70%;
+  margin-bottom: 1em;
+}
